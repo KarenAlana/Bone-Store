@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+          <h1>Loja Store</h1>
+          <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Sobre</a></li>
+          </ul>
+        </nav>
+        <header>Bonés estilosos para você!</header>
+        <div class="barraDePesquisa">
+          <input id="inputPesquisar" type="text" name="" id="" />
+          <button onclick="pesquisar()">Pesquisar</button>
+        </div>
+        <div class="containerPrincipal">
+          <div class="containerLista"></div>
+          <aside>
+            <div class="carrinhoContainer">
+              <div onclick="limpar()" class="limparCarrinho">Limpar Carrinho</div>
+              <div class="carrinhoLista"></div>
+              <div class="total"></div>
+            </div>
+            <img src="./img/img02.png" alt="" />
+          </aside>
+        </div>
+        <footer>
+          <p>Copyright 2024 - Todos os direitos reservados.</p>
+          <p>Feito por Store</p>
+    <script src="lista.js"></script>
+    <script src="render.js"></script>
+    <script src="carrinho.js"></script>
+</body>
+</html>

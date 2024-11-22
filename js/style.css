@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+.containerPrincipal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 100vh;
+}
+aside img {
+  width: 350px; /* width of container */
+  height: 350px; /* height of container */
+  object-fit: cover;
+  object-position: 20% 10%; /* try 20px 10px */ /* try 20px 10px */
+}
+header {
+  background: url("./img/img01.png") no-repeat;
+  background-size: cover;
+  background-position: 50% 75%;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: color;
+  color: #ffffff;
+  letter-spacing: 6px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 60%;
+  margin: 30px auto;
+  height: 55vh;
+}
+@media (max-width: 915px) {
+  header {
+    width: 100%;
+  }
+}
+
+nav {
+  /* background-color: #1f352a; */
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: #ddd; */
+  padding: 10px 5px;
+  color: #354336;
+  /* color: #e2e2e2;  */
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #686868;
+  text-decoration: none;
+  /* font-weight: bold; */
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #414141;
+}
+
+.containerLista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  max-width: 700px;
+}
+
+.item.produto {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 15px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.item.produto:hover {
+  transform: translateY(-5px);
+}
+
+.item.produto img {
+  max-width: 100%;
+  border-radius: 5px;
+  height: 150px;
+}
+
+.item.produto h2 {
+  font-size: 18px;
+  margin: 10px 0;
+  width: 150px;
+  height: 50px;
+}
+
+.item.produto p {
+  font-size: 16px;
+  color: #354336;
+}
+
+.adicionarCarrinho {
+  background-color: #354336;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 15px;
+}
+
+.adicionarCarrinho:hover {
+  background-color: #45a049;
+}
+
+.carrinhoContainer {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  min-height: 500px;
+  overflow-y: auto;
+}
+
+.limparCarrinho {
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.limparCarrinho:hover {
+  background-color: #e53935;
+}
+
+.carrinhoLista {
+  margin: 10px 0;
+}
+.produtoCart {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  margin-top: 15px;
+}
+.imgProduto {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+#carrinhoProduto {
+  width: 90%;
+}
+
+#valorCart {
+  font-weight: bold;
+}
+.item-carrinho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.controles-carrinho {
+  display: flex;
+  align-items: center;
+}
+
+.controles-carrinho button {
+  background-color: #354336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.controles-carrinho button:hover {
+  background-color: #45a049;
+}
+
+.total {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.barraDePesquisa {
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+#inputPesquisar {
+  width: 75%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+}
+
+.barraDePesquisa button {
+  padding: 11px 15px;
+  border: none;
+  background-color: #354336;
+  color: white;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: -1px;
+}
+
+.barraDePesquisa button:hover {
+  background-color: rgb(29, 106, 189);
+}
+
+footer {
+  background: #020a03;
+  color: #ffffff;
+  padding: 30px;
+  text-align: center;
+}
